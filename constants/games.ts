@@ -6,8 +6,20 @@ import halo5Cover from "@/ui/halo-5/cover.jpg";
 import haloCECover from "@/ui/halo-ce/cover.jpg";
 import haloInfiniteCover from "@/ui/halo-infinite/cover.jpg";
 import haloReachCover from "@/ui/halo-reach/cover.jpg";
+import type { StaticImageData } from "next/image";
 
-export const GAMES = [
+type Game = {
+  slug: string;
+  title: string;
+  developer: string;
+  releaseYear: number;
+  cover: StaticImageData;
+  /** Muted gameplay loop served from /public, e.g. "/videos/halo-infinite.mp4". */
+  video?: string;
+  available: boolean;
+};
+
+export const GAMES: Game[] = [
   {
     slug: "halo-ce",
     title: "Halo: Combat Evolved",

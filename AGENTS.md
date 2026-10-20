@@ -35,3 +35,7 @@ release. Add a tool name to select part of the graph. For example, run
 - [ ] If setup, runtime, or package-manager behavior looks wrong, run `vp env doctor` and include its output when asking for help.
 
 <!--VITE PLUS END-->
+
+## Styling
+
+CSS Modules only — no Tailwind. Colocate `Component.module.css` beside its component. Shared tokens, the layered reset (`@layer reset`), and `.sr-only` live in `app/globals.css`. Game-specific tokens are scoped to that game's root class, never `:root`.

@@ -1,10 +1,11 @@
 import Link from "next/link";
+import styles from "./page.module.css";
 
 export default function HaloInfinitePage() {
   return (
-    <main className="flex flex-1 flex-col items-center justify-center gap-4 px-8 text-center">
-      <h1 className="text-2xl font-semibold">Halo Infinite</h1>
-      <Link href="/" className="underline underline-offset-2">
+    <main className={styles.main}>
+      <h1 className={styles.title}>Halo Infinite</h1>
+      <Link href="/" className={styles.link}>
         Back to games
       </Link>
     </main>
