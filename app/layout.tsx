@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Footer } from "@/ui/shared/Footer";
-import { NavBar } from "@/ui/shared/NavBar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,13 +19,12 @@ export const metadata: Metadata = {
   description: "An unofficial foundry and archive of Halo interfaces.",
 };
 
-export default function RootLayout({ children, navbar }: LayoutProps<"/">) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         {children}
         <Footer />
-        <NavBar>{navbar}</NavBar>
       </body>
     </html>
   );

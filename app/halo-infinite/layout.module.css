@@ -1,0 +1,21 @@
+.nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rebeccapurple;
+  border-right: 1.5px solid red;
+  padding: 0 8px;
+  gap: 8px;
+}
+
+.app {
+  height: 100svh;
+  width: 100svw;
+  display: grid;
+  grid-template-columns: 256px auto;
+}
+
+.navItem {
+  background-color: red;
+  padding: 4px;
+}

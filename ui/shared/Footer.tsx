@@ -1,9 +1,4 @@
-import { GAMES } from "@/constants/games";
 import styles from "./Footer.module.css";
-
-const GAME_TITLES = new Intl.ListFormat("en", { type: "conjunction" }).format(
-  GAMES.map((game) => game.title),
-);
 
 export function Footer() {
   return (
@@ -13,7 +8,7 @@ export function Footer() {
         <a href="https://www.xbox.com/en-US/developers/rules" className={styles.link}>
           “Game Content Usage Rules”
         </a>{" "}
-        using assets from {GAME_TITLES}, and it is not endorsed by or affiliated with Microsoft.
+        using assets from Halo Infinite, and it is not endorsed by or affiliated with Microsoft.
       </p>
     </footer>
   );

@@ -19,4 +19,4 @@ vp run build    # production build
 
 ## Legal
 
-Halo © Microsoft Corporation. Installation 00 was created under Microsoft's "[Game Content Usage Rules](https://www.xbox.com/en-US/developers/rules)" using assets from Halo: Combat Evolved, Halo 2, Halo 3, Halo 3: ODST, Halo: Reach, Halo 4, Halo 5: Guardians, and Halo Infinite, and it is not endorsed by or affiliated with Microsoft.
+Halo © Microsoft Corporation. Installation 00 was created under Microsoft's "[Game Content Usage Rules](https://www.xbox.com/en-US/developers/rules)" using assets from Halo Infinite, and it is not endorsed by or affiliated with Microsoft.

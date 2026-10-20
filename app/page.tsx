@@ -1,5 +1,4 @@
-import { GAMES } from "@/constants/games";
-import { GameSelector } from "@/ui/shared/GameSelector";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 const GOALS = [
@@ -8,8 +7,6 @@ const GOALS = [
   "Explore how to recreate these designs in React.",
 ];
 
-const COMING_SOON_COUNT = GAMES.filter((game) => !game.available).length;
-
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -17,7 +14,6 @@ export default function Home() {
         <h1 className={styles.title}>Installation 00</h1>
         <p className={styles.tagline}>An unofficial foundry and archive of Halo interfaces.</p>
       </header>
-      <GameSelector />
       <section aria-labelledby="goals-heading" className={styles.goals}>
         <h2 id="goals-heading" className={styles.goalsHeading}>
           Goals
@@ -31,7 +27,11 @@ export default function Home() {
           ))}
         </ol>
         <p className={styles.note}>
-          Starting with Halo Infinite. {COMING_SOON_COUNT} more on the way.
+          Starting with{" "}
+          <Link href="/halo-infinite" className={styles.link}>
+            Halo Infinite
+          </Link>
+          .
         </p>
       </section>
     </main>

@@ -6,7 +6,7 @@ export default function HaloInfinitePage() {
     <main className={styles.main}>
       <h1 className={styles.title}>Halo Infinite</h1>
       <Link href="/" className={styles.link}>
-        Back to games
+        Back home
       </Link>
     </main>
   );

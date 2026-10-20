@@ -2,7 +2,6 @@
   --background: #ffffff;
   --foreground: #171717;
   --foreground-muted: color-mix(in oklab, var(--foreground) 60%, transparent);
-  --accent: oklch(82.8% 0.111 230.318);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

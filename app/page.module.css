@@ -65,3 +65,9 @@
   line-height: calc(1.25 / 0.875);
   color: var(--foreground-muted);
 }
+
+.link {
+  color: var(--foreground);
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
