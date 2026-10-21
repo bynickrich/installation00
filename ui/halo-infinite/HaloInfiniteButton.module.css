@@ -1,4 +1,0 @@
-/* Halo Infinite tokens live on this class, not :root, so they can't leak into other games. */
-.button {
-  /* TODO(nick): recreate the Halo Infinite menu button — palette, type, edge treatment, hover/focus states. */
-}

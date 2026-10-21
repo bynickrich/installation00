@@ -1,22 +1,56 @@
-# Installation 00
+# sv
 
-An unofficial foundry and archive of Halo interfaces.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-Installation 00 rebuilds the menus, HUDs and interface elements of every mainline Halo game as working React components. It also records the details behind them, such as colors, typography and references, so they're preserved for future players and game designers. It's a fan-made tribute to the Halo community, starting with Halo Infinite.
+## Creating a project
 
-Site: [installation00.dev](https://installation00.dev)
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Development
-
-This project uses [Vite+](https://viteplus.dev) (`vp`) with [Next.js](https://nextjs.org).
-
-```bash
-vp install      # install dependencies
-vp run dev      # start the dev server at http://localhost:3000
-vp check        # format, lint and type check
-vp run build    # production build
+```sh
+# create a new project
+npx sv create my-app
 ```
 
-## Legal
+To recreate this project with the same configuration:
 
-Halo © Microsoft Corporation. Installation 00 was created under Microsoft's "[Game Content Usage Rules](https://www.xbox.com/en-US/developers/rules)" using assets from Halo Infinite, and it is not endorsed by or affiliated with Microsoft.
+```sh
+# recreate this project
+pnpm dlx sv@1.1.1 create --template minimal --types ts --add prettier eslint ai-tools="ide:claude-code+delivery:plugin" --install pnpm ./
+```
+
+## Adding features
+
+Add features to your project with `sv add`:
+
+```sh
+npx sv add
+```
+
+For example, to add Tailwind CSS:
+
+```sh
+npx sv add tailwindcss
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
