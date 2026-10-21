@@ -1,14 +1,14 @@
 {
-	"enabledPlugins": {
-		"svelte@svelte": true
-	},
-	"extraKnownMarketplaces": {
-		"svelte": {
-			"source": {
-				"source": "github",
-				"repo": "sveltejs/ai-tools",
-				"sparsePaths": [".claude-plugin", "plugins"]
-			}
-		}
-	}
+  "enabledPlugins": {
+    "svelte@svelte": true
+  },
+  "extraKnownMarketplaces": {
+    "svelte": {
+      "source": {
+        "source": "github",
+        "repo": "sveltejs/ai-tools",
+        "sparsePaths": [".claude-plugin", "plugins"]
+      }
+    }
+  }
 }

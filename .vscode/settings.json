@@ -1,9 +1,12 @@
 {
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true,
-	"editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
-	"[svelte]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-	"prettier.documentSelectors": ["**/*.svelte"],
-	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte"],
-	"files.eol": "\n"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
+  "[svelte]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "prettier.documentSelectors": ["**/*.svelte"],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte"],
+  "files.eol": "\n",
+  "oxc.enable": false
 }
