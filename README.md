@@ -1,56 +1,24 @@
-# sv
+# Installation 00
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+An unofficial foundry and archive of Halo interfaces.
 
-## Creating a project
+Installation 00 rebuilds the menus, HUDs and interface elements of every mainline Halo game as working Svelte components. It also records the details behind them, such as colors, typography and references, so they're preserved for future players and game designers. It's a fan-made tribute to the Halo community, starting with Halo Infinite.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Site: [installation00.dev](https://installation00.dev)
 
-```sh
-# create a new project
-npx sv create my-app
+## Development
+
+This project uses [SvelteKit](https://svelte.dev/docs/kit) with [pnpm](https://pnpm.io).
+
+```bash
+pnpm install    # install dependencies
+pnpm dev        # start the dev server at http://localhost:5173
+pnpm lint       # check formatting (Prettier) and lint (ESLint)
+pnpm format     # format all files
+pnpm check      # type check
+pnpm build      # production build
 ```
 
-To recreate this project with the same configuration:
+## Legal
 
-```sh
-# recreate this project
-pnpm dlx sv@1.1.1 create --template minimal --types ts --add prettier eslint ai-tools="ide:claude-code+delivery:plugin" --install pnpm ./
-```
-
-## Adding features
-
-Add features to your project with `sv add`:
-
-```sh
-npx sv add
-```
-
-For example, to add Tailwind CSS:
-
-```sh
-npx sv add tailwindcss
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Halo © Microsoft Corporation. Installation 00 was created under Microsoft's "[Game Content Usage Rules](https://www.xbox.com/en-US/developers/rules)" using assets from Halo Infinite, and it is not endorsed by or affiliated with Microsoft.
