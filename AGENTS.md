@@ -21,8 +21,16 @@ Run `pnpm lint` and `pnpm check` before finishing a change.
 ## Styling
 
 - No Tailwind. Put each component's styles in its own `<style>` block.
-- Shared tokens, the layered reset and `.sr-only` live in `src/global.css`, which the root layout imports. Its `@layer reset, base;` statement sets the layer order, so declare any new layer there.
-- Scope game-specific tokens to that game's root class, never `:root`.
+- The layered reset, base element styles and `.sr-only` live in `src/global.css`, which the root layout imports. Its `@layer reset, base;` statement sets the layer order, so declare any new layer there.
+
+## Themes
+
+Each game is a theme in `src/lib/themes/<game>.css`, scoped to `[data-theme='<game>']` and imported by the root layout.
+
+- Every theme defines the same tokens: `--font-display`, `--font-body` and the `--color-*` set in `halo-infinite.css`. When a theme needs a new token, add it to every theme.
+- Components use only these shared tokens, never game-specific names, so they work in any theme.
+- A theme imports its own fonts from Fontsource and lists the original commercial typeface first, so the original font wins where it's installed.
+- `src/app.html` sets the default theme on `<html>`. Set `data-theme` on any element to theme just that subtree, such as a game preview card.
 
 ## Interface quality
 

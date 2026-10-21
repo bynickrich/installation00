@@ -6,6 +6,13 @@ Installation 00 rebuilds the menus, HUDs and interface elements of every mainlin
 
 Site: [installation00.dev](https://installation00.dev)
 
+## Goals
+
+1. Study what makes a Halo interface great, from the menus to the HUD.
+2. Recreate these interfaces in Svelte, as a hands-on way to learn component composition, shaders and other web techniques.
+3. Preserve the history of Halo's interfaces for future players and game developers.
+4. Learn how to bring 3D elements from the games to the web.
+
 ## Development
 
 This project uses [SvelteKit](https://svelte.dev/docs/kit) with [pnpm](https://pnpm.io).

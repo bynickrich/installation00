@@ -1,0 +1,33 @@
+@import '@fontsource-variable/oxanium';
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/500.css';
+@import '@fontsource/barlow/600.css';
+
+/*
+ * Halo Infinite theme.
+ *
+ * Sources (October 2026):
+ * - Industry is the Infinite UI display typeface. Halo Waypoint, whose design was aligned with
+ *   in-game Customization (https://www.mrdies.com/halo-infinite-customization), self-hosts it.
+ * - Normative Pro and every colour come from the Halo Waypoint stylesheets
+ *   (https://www.halowaypoint.com), not in-game captures, so verify them against the game.
+ * - Oxanium and Barlow are the closest open-licence matches for Industry and Normative Pro.
+ */
+[data-theme='halo-infinite'] {
+  color-scheme: dark;
+
+  --font-display: 'Industry', 'Oxanium Variable', sans-serif;
+  --font-body: 'Normative Pro', 'Barlow', 'Segoe UI', Arial, sans-serif;
+
+  --color-background: #141414;
+  --color-surface: #20272c;
+  --color-text: #fff;
+  --color-text-muted: #b4b4b4;
+  --color-accent: #70cddf;
+  --color-accent-light: #aaf1ff;
+  --color-highlight: #ffc11c;
+  --color-highlight-hover: #ffdb77;
+  --color-success: #64ba0f;
+  --color-warning: #fb7520;
+  --color-danger: #d13333;
+}

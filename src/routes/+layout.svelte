@@ -1,5 +1,6 @@
 <script lang="ts">
   import '../global.css';
+  import '#lib/themes/halo-infinite.css';
   import favicon from '#lib/assets/favicon.svg';
   import type { LayoutProps } from './$types';
 
